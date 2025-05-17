@@ -1,0 +1,220 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* Not increase size */
+  }
+  
+  /* General Styles */
+  body {
+    font-family: 'Inter', sans-serif;/*  Main font */
+    background-color: #ffffff;/* White background */
+    color: #000000;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #ffffff;/* White header background */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);/* Subtle shadow */
+    padding: 1rem 0;/* Vertical padding */
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;/* Space between logo and nav */
+    align-items: center;/* Center items vertically */
+    padding: 0 2rem;/* Horizontal padding */
+  }
+  
+  .logo-title {
+    display: flex;
+    align-items: center;/* Align logo and title vertically */
+    gap: 1rem;/* Space between logo and title */
+  }
+  
+  .logo {
+    width: 60px;/* Set logo size */
+    height: auto;
+  }
+  
+  header h1 {
+    font-size: 1.6rem;/* Title font size */
+    font-weight: 600;/* Bold */
+    color: #002f6c;/* Blue color */
+  }
+  
+  nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex;
+    gap: 2rem;/* Spacing between nav items */
+  }
+  
+  nav a {
+    text-decoration: none; /* Remove underline */
+    color: #002f6c;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;/* hover transition */
+    padding: 0.4rem 0.75rem;/* Padding around link */
+    border-radius: 6px;/* Rounded corners */
+  }
+  
+  nav a:hover {
+    background-color: #002f6c;/* Background on hover */
+    color: #ffffff;/* Text color on hover */
+  }
+  
+  /* Main Section */
+  main {
+    padding: 3rem 2rem;/* Space around main content */
+  }
+  
+  .hero-video {
+    position: relative;
+    height: 80vh;/* Hero section height */
+    overflow: hidden;/* Hide overflow video */
+  }
+  
+  .hero-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);/* Center the video */
+    object-fit: cover;/* Cover the container */
+    z-index: 1;/* Place behind form */
+  }
+  
+  /* Appointment Form */
+  .appointment-form {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    background: rgba(255, 255, 255, 0.95);/* Semi-transparent white */
+    padding: 2.5rem;
+    border-radius: 12px;
+    width: 400px;
+    z-index: 2;/* Above video */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Strong shadow */
+  }
+  
+  .appointment-form h2 {
+    color: #002f6c;/* Blue heading */
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    text-align: center;/* Center heading */
+  }
+  
+  .appointment-form form {
+    display: flex;
+    flex-direction: column;/* Stack inputs vertically */
+    gap: 0.75rem;/* Spacing */
+  }
+  
+  .appointment-form input,
+  .appointment-form select,
+  .appointment-form textarea {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #000000; /* text is black */
+  }
+  
+  /* Placeholder text in black */
+  .appointment-form input::placeholder,
+  .appointment-form textarea::placeholder {
+    color: #000000;
+    opacity: 1;
+  }
+  
+  .appointment-form button {
+    background-color: #002f6c;
+    color: #fff;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;/* Hover effect */
+  }
+  
+  .appointment-form button:hover {
+    background-color:#002f6c;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f4f4f4;
+    color: #002f6c;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.95rem;
+    margin-top: 2rem;/* Space above footer */
+  }
+  /* Fade in and move up animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .services-list li {
+    width: 30%; /* Approx 3 per row */
+    max-width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .services-list img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    margin-bottom: 0.75rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);/* Soft shadow */
+  }
+  
+  .services-list p {
+    font-weight: 600;
+    color: #002f6c;
+    font-size: 1.05rem;
+  }
+  /*  Slide up Animation */
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .slide-up {
+    animation: slideUp 1s ease-out forwards;
+  }
+  
