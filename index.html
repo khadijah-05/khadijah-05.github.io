@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clinic</title>
+  <link rel="stylesheet" href="style.css"/><!-- Links to external CSS -->
+</head>
+<body>
+  <header>
+    <div class="header-container"><!-- Container for header content -->
+      <div class="logo-title"><!-- logo and title container -->
+        <img src="logo.png" alt="Hospital Logo" class="logo"/> <!-- Clinic logo -->
+        <h1>Clinic</h1><!-- title -->
+      </div>
+      <nav><!-- Navigation bar -->
+        <ul>
+          <li><a href="/index.html">Home</a></li><!-- Home link -->
+          <li><a href="/services.html">Services</a></li><!-- Services page link -->
+          <li><a href="/doctors.html">Doctors</a></li><!-- Doctors page link -->
+          <li><a href="/about.html">About</a></li><!-- About page link -->
+          <li><a href="/contact.html">Contact</a></li><!-- Contact page link -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="hero-video">
+      <video autoplay loop muted playsinline><!-- Background video settings -->
+        <source src="Background video.mp4" type="video/mp4" /><!-- Video  -->
+      </video>
+      <div class="appointment-form"><!-- Appointment form container -->
+        <h2>Book an Appointment</h2><!-- Form heading -->
+        <form><!-- Start of form -->
+          <input type="text" placeholder="Full Name" required /><!-- Name input -->
+          <input type="email" placeholder="Email Address" required /><!-- Email input -->
+          <input type="number" placeholder="Phone Number" required /><!-- Number input -->
+          <select required>
+            <option value="" disabled selected>Select Department</option>
+            <option>General </option><!-- Option 1 -->
+            <option>Pediatrics</option><!-- Option 2 -->
+            <option>Dermatology</option><!-- Option 3 -->
+            <option>Vaccination</option><!-- Option 4 -->
+            <option>Testing</option><!-- Option 5 -->
+          </select>
+          <input type="date" required /><!-- Date picker -->
+          <textarea placeholder="Details" rows="3"></textarea><!-- Additional details -->
+          <button type="submit">Submit</button><!-- Submit button -->
+        </form><!-- End of form -->
+      </div>
+    </div>
+  </main>
+  <footer>&copy; 2025 Clinic</footer><!-- Footer  -->
+  <script src="script.js"></script><!-- Link to External JavaScript file -->
+</body>
+</html> 
