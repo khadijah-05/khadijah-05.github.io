@@ -1,73 +1,69 @@
 /* Base Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;/* Not increase size */
-  }
-  
-  /* General Styles */
-  body {
-    font-family: 'Inter', sans-serif;/*  Main font */
-    background-color: #002f6c;
-    color: #ffffff;
-    line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Header */
-  header {
-    background-color: #ffffff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);/*  shadow */
-    padding: 1rem 0;/* Vertical padding */
-  }
-  
-  .header-container {
-    display: flex;
-    justify-content: space-between;/* Space between logo and nav */
-    align-items: center;/* Center items vertically */
-    padding: 0 2rem;/* Horizontal padding */
-  }
-  
-  .logo-title {
-    display: flex;
-    align-items: center;/* Align logo and title vertically */
-    gap: 1rem;/* Space between logo and title */
-  }
-  
-  .logo {
-    width: 60px;/*  logo size */
-    height: auto;
-  }
-  
-  header h1 {
-    font-size: 1.6rem;/* Title font size */
-    font-weight: 600;/* Bold */
-    color: #002f6c;
-  }
-  
-  nav ul {
-    list-style: none;/* Remove bullet points */
-    display: flex;
-    gap: 2rem;/* Spacing between nav items */
-  }
-  
-  nav a {
-    text-decoration: none;/* Remove underline */
-    color: #002f6c;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: all 0.3s ease;/* hover transition */
-    padding: 0.4rem 0.75rem;/* Padding around link */
-    border-radius: 6px;/* Rounded corners */
-  }
-  
-  nav a:hover {
-    background-color: #002f6c;
-    color: #ffffff;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;/* Not increase size */
+}
+
+/* General Styles */
+body {
+  font-family: 'Inter', sans-serif;/*  Main font */
+  background-color: #002f6c;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);/*  shadow */
+  padding: 1rem 0;/* Vertical padding */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;/* Space between logo and nav */
+  align-items: center;/* Center items vertically */
+  padding: 0 2rem;/* Horizontal padding */
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;/* Align logo and title vertically */
+  gap: 1rem;/* Space between logo and title */
+}
+
+.logo {
+  width: 60px;/*  logo size */
+  height: auto;
+}
+
+header h1 {
+  font-size: 1.6rem;/* Title font size */
+  font-weight: 600;/* Bold */
+  color: #002f6c;
+}
+
+nav ul {
+  list-style: none; /* Remove bullet points */
+  display: flex;
+  gap: 2rem;/* Spacing between nav items */
+}
+
+nav a {
+  text-decoration: none; /* Remove underline */
+  color: #002f6c;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;/* hover transition */
+  padding: 0.4rem 0.75rem;/* Padding around link */
+  border-radius: 6px;/* Rounded corners */
+}
+
+nav a:hover {
+  background-color: #002f6c;
+  color: #ffffff;
+}
   /* Main Section */
   main {
     padding: 8rem;
@@ -109,4 +105,9 @@
     font-size: 0.95rem;
     margin-top: auto; /* push footer to bottom */
   }
-  
+  /* Page Wrapper to handle layout */
+.page-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh; /* Full height of viewport */
+}
