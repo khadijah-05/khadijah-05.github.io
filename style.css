@@ -156,6 +156,10 @@
     font-size: 0.95rem;
     margin-top: 2rem;/* Space above footer */
   }
+  .slide-up {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
   /* Fade in and move up animation */
   @keyframes fadeInUp {
     from {
