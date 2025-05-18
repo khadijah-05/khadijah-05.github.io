@@ -108,7 +108,7 @@
     /* Page Wrapper to handle layout */
   .page-wrapper {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
+    flex-direction: column; 
     min-height: 100vh; /* Full height of viewport */
   }
   
